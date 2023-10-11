@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Skills Showcase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ITMD 543 Lab 2: Vicky Das</h1>
+    </header>
+    
+    <section id="html-section">
+        <h2>HTML</h2>
+        <ul>
+            <!-- 1. Semantic HTML -->
+            <li>Used semantic HTML elements like &lt;header&gt;, &lt;section&gt;, and &lt;Footer&gt; for better structure.</li>
+            <!-- 2. Lists -->
+            <li>Created an unordered list to showcase items within each section.</li>
+            <!-- 3. Links -->
+            <li>Added a link to go to a different page.
+                <a href="https://gray-moss-0292c3010.3.azurestaticapps.net/" target="_blank">
+                    My Bio Page
+                </a>
+            </li>
+            <!-- 4. Images -->
+            <li>Inserted images to enhance visual appeal and provide context. (JS Trick 3)</li>
+            <!-- 5. Forms -->
+            <li>Developed a contact form with form elements like &lt;input&gt; and &lt;label&gt; Check below.
+                <form>
+                    <label for="fname">Enter First Name</label>
+                    <input class="fname" type="text" placeholder="First Name">
+
+                    <label for="lname">Enter Last Name</label>
+                    <input class="lname" type="text" placeholder="Enter LastName">
+
+                    <button type="submit" onclick="submitForm()">Submit To See Alert</button>
+
+                </form>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="css-section">
+        <h2>CSS</h2>
+        <ul>
+            <!-- 1. Selectors -->
+            <li>Used different CSS selectors to style various elements on the page.</li>
+            <!-- 2. Box Model -->
+            <li>Adjusted the box model properties (margin, padding, border) for precise layout control.</li>
+            <!-- 3. Flexbox -->
+            <li>Utilized Flexbox to create a responsive layout.</li>
+            <!-- 4. Transitions -->
+            <li>Applied transitions to enhance user experience when hovering over links and buttons.</li>
+            <!-- 5. Media Queries -->
+            <li>Implemented media queries for a mobile-responsive design.</li>
+        </ul>
+    </section>
+    
+    <section id="javascript-section">
+    <h2>JavaScript Tricks</h2>
+    <ul>
+        <li id="trick-1">
+            Trick 1: Dynamic Text (CLICK ME)
+            <div class="trick-container" style="display: none;">'Hello, I am dynamic text. Click me again!'</div>
+        </li>
+        <li id="trick-2">
+            Trick 2: Random Color Generator
+            <div id="mouseover-container" class="mouseover-container">
+                <p>Hover over this container to see random color. The background color will change.</p>
+            </div>
+        </li>
+        <li id="trick-3">
+            Trick 3: Image Slider
+            <div class="trick-container">
+                <img id="slider-image" src="htmllogo.png" alt="Image Slider"> <br>
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </li>
+        <li id="trick-4">
+            Trick 4: Interactive Counter
+            <div class="trick-container">
+                <p id="counter">0</p>
+                <button id="decrement-button">Decrement</button>
+                <button id="increment-button">Increment</button>
+            </div>
+        </li>
+        <li id="trick-5">
+            Trick 5: Dark Mode Toggle
+            <div class="trick-container">
+                <label for="dark-mode-toggle">Dark Mode</label>
+                <input type="checkbox" id="dark-mode-toggle">
+            </div>
+        </li>
+    </ul>
+
+
+</section>
+
+
+    <footer>
+        <p>&copy; vickydas copytright 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

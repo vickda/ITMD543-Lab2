@@ -79,4 +79,10 @@ const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
+    
+    // const isDarkModeOn = document.querySelector(".dark-mode");
+    // const htmlTag = document.querySelector(".main-html");
+    // if(isDarkModeOn) htmlTag.style.background = 'black'
+    // else htmlTag.style.background = 'white'
+
 });

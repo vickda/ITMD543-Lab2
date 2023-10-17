@@ -6,7 +6,35 @@ const submitForm = () => {
     alert(`Hello ${fname} ${lname}`)
 }
 
-// JavaScript for impressive tricks
+// HTML Canvas Script
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+// Canvas variables
+let boxX = 10;
+let boxSpeed = 2;
+let boxDirection = 1;
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Update box position
+    boxX += boxSpeed * boxDirection;
+
+    // Draw the box
+    ctx.fillStyle = "blue";
+    ctx.fillRect(boxX, 50, 30, 20);
+
+    // Check if the box reached canvas boundaries
+    if (boxX + 30 > canvas.width || boxX < 0) {
+        boxDirection *= -1; // Reverse direction
+    }
+
+    requestAnimationFrame(animate);
+}
+animate();
+
+// JavaScript Section
 
 // Trick 1: Dynamic Text
 const trick1Container = document.querySelector('.trick-container');
@@ -86,3 +114,5 @@ darkModeToggle.addEventListener('change', () => {
     // else htmlTag.style.background = 'white'
 
 });
+
+
